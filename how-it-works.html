@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A closer look at clients, servers, DNS, and the web request-response process.">
+  <title>How It Works | Client-Server Architecture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- One shared navigation menu appears on all six pages. -->
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html">CLIENT<span>/</span>SERVER <span>101</span></a>
+  <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li>
+<li><a href="how-it-works.html" aria-current="page">How It Works</a></li>
+<li><a href="architecture.html">Architecture Types</a></li>
+<li><a href="concepts.html">Key Concepts</a></li>
+<li><a href="references.html">References</a></li>
+<li><a href="about.html">About Me</a></li></ul></nav>
+</div></header>
+<div class="page-heading"><div class="wrap"><p class="eyebrow">IT 3203 / RESEARCH PROJECT</p><h1>How It Works</h1><p>A closer look at clients, servers, DNS, and the web request-response process.</p></div></div>
+<main class="container"><section class="section"><p class="eyebrow">The core process</p><h2>From a click to a webpage</h2><p>When you enter a website address, the browser (client) communicates with a server to retrieve the information needed to display the page.</p><div class="content-panel"><img src="images/client-server-diagram.svg" alt="Client sends a request to a server; server sends a response back across the Internet" width="750" height="490"><p class="small">Original diagram showing the basic request-response relationship.</p></div><ol class="topic-list"><li><strong>Enter a URL:</strong> The browser identifies the resource that you want.</li><li><strong>Find the server:</strong> DNS helps translate a domain name into an IP address.</li><li><strong>Send a request:</strong> The browser establishes a connection and sends an HTTP or HTTPS request.</li><li><strong>Process the request:</strong> The server finds or generates the requested resource.</li><li><strong>Return the response:</strong> The server sends a status code, headers, and possibly content such as HTML.</li><li><strong>Display the page:</strong> The browser processes the response and may request CSS, images, or other assets.</li></ol></section>
+<section class="section"><h2>Understanding requests and responses</h2><div class="card-grid two"><article class="card"><span class="kicker">Client → Server</span><h3>HTTP Request</h3><p>The client includes a method such as <strong>GET</strong> or <strong>POST</strong> and identifies the requested resource.</p><p>Example: a browser requests a homepage.</p></article><article class="card"><span class="kicker">Server → Client</span><h3>HTTP Response</h3><p>The server returns a status code and, when appropriate, a response body such as HTML or JSON.</p><p>Example: the server returns a webpage and status <strong>200</strong>.</p></article></div><div class="table-wrap"><table><thead><tr><th scope="col">Status</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead><tbody><tr><td>200</td><td>Successful request</td><td>Page loaded successfully</td></tr><tr><td>404</td><td>Resource not found</td><td>Page address does not exist</td></tr><tr><td>500</td><td>Server-side error</td><td>Server fails while handling request</td></tr></tbody></table></div></section>
+<section class="section"><h2>Where we see it every day</h2><div class="card-grid two"><article class="card"><h3>Online Banking</h3><p>A banking app requests balances and transactions from secure backend services. Authentication and access controls help protect account information.</p></article><article class="card"><h3>Video Streaming</h3><p>A streaming client requests video data. Remote servers and content delivery networks provide the content as playback continues.</p></article></div></section><p><a href="architecture.html">Next: Explore architecture types →</a></p></main><!-- Assignment-required class-project note and course link. -->
+<footer class="site-footer"><div class="footer-inner"><p><strong>Client-Server Architecture on the Web</strong><br>Research website by Whitt Pierce · Fall 2026</p><p><a href="index.html">Back to Home ↑</a></p></div><div class="footer-inner" id="project-note"><p>This website is a class project for IT 3203. <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">Visit the IT 3203 course website</a>.</p></div></footer>
+</body></html>

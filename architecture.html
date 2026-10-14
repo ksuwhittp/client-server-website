@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How two-tier, three-tier, and peer-to-peer approaches organize computing responsibilities.">
+  <title>Architecture Types | Client-Server Architecture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- One shared navigation menu appears on all six pages. -->
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html">CLIENT<span>/</span>SERVER <span>101</span></a>
+  <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li>
+<li><a href="how-it-works.html">How It Works</a></li>
+<li><a href="architecture.html" aria-current="page">Architecture Types</a></li>
+<li><a href="concepts.html">Key Concepts</a></li>
+<li><a href="references.html">References</a></li>
+<li><a href="about.html">About Me</a></li></ul></nav>
+</div></header>
+<div class="page-heading"><div class="wrap"><p class="eyebrow">IT 3203 / RESEARCH PROJECT</p><h1>Architecture Types</h1><p>How two-tier, three-tier, and peer-to-peer approaches organize computing responsibilities.</p></div></div>
+<main class="container"><section class="section"><p class="eyebrow">Common system designs</p><h2>Different ways to organize applications</h2><p>Client-server solutions can be simple or involve several layers. Separating responsibilities can help improve maintenance, security, and scalability.</p><div class="card-grid two"><article class="card"><span class="number">02</span><h3>Two-Tier Architecture</h3><p>A client communicates directly with a server or database service. The client usually provides the user interface and can perform some processing.</p><p><strong>Example:</strong> A desktop application connected directly to a database server.</p></article><article class="card"><span class="number">03</span><h3>Three-Tier Architecture</h3><p>Presentation, application, and data layers perform separate responsibilities. The browser displays information, the application processes logic, and the data layer stores information.</p><p><strong>Example:</strong> An online store with a frontend, application services, and a database.</p></article></div><div class="content-panel"><h3>Three-tier structure</h3><img src="images/three-tier-diagram.svg" alt="Presentation layer connects to application layer, which connects to the data layer" width="1000" height="320"></div></section>
+<section class="section"><h2>Client-Server vs. Peer-to-Peer</h2><p>In client-server architecture, a server provides centralized services. In a peer-to-peer system, participating computers may both request and provide resources.</p><div class="table-wrap"><table><thead><tr><th scope="col">Feature</th><th scope="col">Client-Server</th><th scope="col">Peer-to-Peer</th></tr></thead><tbody><tr><td>Resource sharing</td><td>Provided by dedicated server systems</td><td>Distributed among peers</td></tr><tr><td>Management</td><td>More centralized</td><td>More distributed</td></tr><tr><td>Typical strength</td><td>Centralized control and policy management</td><td>Less dependence on one central server</td></tr></tbody></table></div></section>
+<section class="section"><h2>Benefits and challenges</h2><div class="card-grid two"><article class="card"><h3>Advantages</h3><ul class="topic-list"><li>Centralized resources and backups</li><li>Consistent access controls</li><li>Shared services for many users</li><li>Ability to scale server infrastructure</li></ul></article><article class="card"><h3>Challenges</h3><ul class="topic-list"><li>Potential server bottlenecks</li><li>Outages that can affect many clients</li><li>Attractive targets for attackers</li><li>Network delays and maintenance costs</li></ul></article></div></section><p><a href="concepts.html">Next: Review seven key concepts →</a></p></main><!-- Assignment-required class-project note and course link. -->
+<footer class="site-footer"><div class="footer-inner"><p><strong>Client-Server Architecture on the Web</strong><br>Research website by Whitt Pierce · Fall 2026</p><p><a href="index.html">Back to Home ↑</a></p></div><div class="footer-inner" id="project-note"><p>This website is a class project for IT 3203. <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">Visit the IT 3203 course website</a>.</p></div></footer>
+</body></html>
