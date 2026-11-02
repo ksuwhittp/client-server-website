@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Test your knowledge of client-server architecture with a timed quiz"><title>Knowledge Quiz | Client-Server Architecture</title><link rel="stylesheet" href="style.css"><script src="quiz.js" defer></script></head><body>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html">CLIENT<span>/</span>SERVER <span>101</span></a>
+  <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li>
+<li><a href="how-it-works.html">How It Works</a></li>
+<li><a href="architecture.html">Architecture Types</a></li>
+<li><a href="concepts.html">Key Concepts</a></li>
+<li><a href="references.html">References</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="quiz.html" aria-current="page">Knowledge Quiz</a></li></ul></nav>
+</div></header>
+<main><section class="page-heading"><div class="wrap"><p class="eyebrow">Interactive Self-Assessment</p><h1>Client-Server Knowledge Quiz</h1><p>Answer all 10 questions to test what you learned from the site. You have 10 minutes. A score of at least 70% is a passing result.</p></div></section>
+<div class="container quiz-container"><section class="quiz-toolbar" aria-label="Quiz progress"><div><strong>10 Questions</strong><p>6 single-choice • 3 short-answer • 1 multiple-select</p></div><div class="quiz-timer" role="timer" aria-live="off"><span>Time remaining</span><strong id="timer">10:00</strong></div></section>
+<section id="results" class="quiz-results" hidden tabindex="-1" aria-live="polite"><h2 id="result-title">Your results</h2><p id="result-score"></p><p id="result-time"></p><p>Review the feedback underneath each question for the correct answers.</p></section>
+<form id="quiz-form" novalidate>
+<fieldset class="quiz-question" id="question-1"><legend><span class="question-number">01</span> In a client-server model, the device or program that requests a resource is called a _____.</legend><div class="answer-options"><label for="q1">Your answer</label><input type="text" id="q1" name="q1" autocomplete="off" placeholder="Type your answer"></div><p class="question-feedback" id="feedback-1" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-2"><legend><span class="question-number">02</span> Which protocol is used to transfer web pages between browsers and web servers?</legend><div class="answer-options"><label class="answer-choice"><input type="radio" name="q2" value="FTP"><span>FTP</span></label>
+<label class="answer-choice"><input type="radio" name="q2" value="HTTP"><span>HTTP</span></label>
+<label class="answer-choice"><input type="radio" name="q2" value="SMTP"><span>SMTP</span></label>
+<label class="answer-choice"><input type="radio" name="q2" value="SSH"><span>SSH</span></label></div><p class="question-feedback" id="feedback-2" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-3"><legend><span class="question-number">03</span> Which architectural tier is mainly responsible for displaying the user interface?</legend><div class="answer-options"><label class="answer-choice"><input type="radio" name="q3" value="Presentation tier"><span>Presentation tier</span></label>
+<label class="answer-choice"><input type="radio" name="q3" value="Data tier"><span>Data tier</span></label>
+<label class="answer-choice"><input type="radio" name="q3" value="Database tier"><span>Database tier</span></label>
+<label class="answer-choice"><input type="radio" name="q3" value="Storage tier"><span>Storage tier</span></label></div><p class="question-feedback" id="feedback-3" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-4"><legend><span class="question-number">04</span> Select ALL statements that are true about HTTPS.</legend><div class="answer-options"><label class="answer-choice"><input type="checkbox" name="q4" value="It uses TLS to protect data in transit."><span>It uses TLS to protect data in transit.</span></label>
+<label class="answer-choice"><input type="checkbox" name="q4" value="It provides encryption for web traffic."><span>It provides encryption for web traffic.</span></label>
+<label class="answer-choice"><input type="checkbox" name="q4" value="It guarantees the website is free from malware."><span>It guarantees the website is free from malware.</span></label>
+<label class="answer-choice"><input type="checkbox" name="q4" value="It is commonly used for secure web connections."><span>It is commonly used for secure web connections.</span></label></div><p class="question-feedback" id="feedback-4" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-5"><legend><span class="question-number">05</span> What three-letter abbreviation names the protocol that translates domain names into IP addresses?</legend><div class="answer-options"><label for="q5">Your answer</label><input type="text" id="q5" name="q5" autocomplete="off" placeholder="Type your answer"></div><p class="question-feedback" id="feedback-5" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-6"><legend><span class="question-number">06</span> Which HTTP status code means a requested resource was not found?</legend><div class="answer-options"><label class="answer-choice"><input type="radio" name="q6" value="200"><span>200</span></label>
+<label class="answer-choice"><input type="radio" name="q6" value="301"><span>301</span></label>
+<label class="answer-choice"><input type="radio" name="q6" value="404"><span>404</span></label>
+<label class="answer-choice"><input type="radio" name="q6" value="500"><span>500</span></label></div><p class="question-feedback" id="feedback-6" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-7"><legend><span class="question-number">07</span> In a three-tier architecture, which tier typically stores and manages persistent data?</legend><div class="answer-options"><label class="answer-choice"><input type="radio" name="q7" value="Presentation"><span>Presentation</span></label>
+<label class="answer-choice"><input type="radio" name="q7" value="Data"><span>Data</span></label>
+<label class="answer-choice"><input type="radio" name="q7" value="Client"><span>Client</span></label>
+<label class="answer-choice"><input type="radio" name="q7" value="Transport"><span>Transport</span></label></div><p class="question-feedback" id="feedback-7" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-8"><legend><span class="question-number">08</span> What does a web browser usually do first when you navigate to a website?</legend><div class="answer-options"><label class="answer-choice"><input type="radio" name="q8" value="Send a request for a resource"><span>Send a request for a resource</span></label>
+<label class="answer-choice"><input type="radio" name="q8" value="Automatically modify the server database"><span>Automatically modify the server database</span></label>
+<label class="answer-choice"><input type="radio" name="q8" value="Host a server"><span>Host a server</span></label>
+<label class="answer-choice"><input type="radio" name="q8" value="Disable HTTP"><span>Disable HTTP</span></label></div><p class="question-feedback" id="feedback-8" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-9"><legend><span class="question-number">09</span> Which HTTP request method is commonly used to retrieve a resource?</legend><div class="answer-options"><label for="q9">Your answer</label><input type="text" id="q9" name="q9" autocomplete="off" placeholder="Type your answer"></div><p class="question-feedback" id="feedback-9" hidden></p></fieldset>
+<fieldset class="quiz-question" id="question-10"><legend><span class="question-number">10</span> Which statement best describes a server?</legend><div class="answer-options"><label class="answer-choice"><input type="radio" name="q10" value="A system that responds to client requests"><span>A system that responds to client requests</span></label>
+<label class="answer-choice"><input type="radio" name="q10" value="Only a desktop computer"><span>Only a desktop computer</span></label>
+<label class="answer-choice"><input type="radio" name="q10" value="A browser tab"><span>A browser tab</span></label>
+<label class="answer-choice"><input type="radio" name="q10" value="A cable that connects computers"><span>A cable that connects computers</span></label></div><p class="question-feedback" id="feedback-10" hidden></p></fieldset>
+<div class="quiz-actions"><button type="submit" id="submit-quiz" class="quiz-button">Submit Quiz</button><button type="button" id="reset-quiz" class="quiz-button secondary">Retake / Reset Quiz</button></div></form><p class="small">The quiz runs entirely in your browser, with no account or server required. Each question is worth one point.</p></div></main>
+<footer class="site-footer"><div class="footer-inner"><p><strong>Client-Server Architecture on the Web</strong><br>Research website by Whitt Pierce · Fall 2026</p><p><a href="index.html">Back to Home ↑</a></p></div><div class="footer-inner" id="project-note"><p>This website is a class project for IT 3203. <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">Visit the IT 3203 course website</a>.</p></div></footer></body></html>
